@@ -9,7 +9,6 @@
 #include "ComplexTable.hpp"
 #include "ComplexValue.hpp"
 #include "Definitions.hpp"
-#include "Log.hpp"
 
 #include <cstddef>
 #include <iostream>

@@ -15,7 +15,7 @@
 //   - call counts of various functions
 //   - clock() timing of these functions
 #define ENABLE_PROFILING false
-#include "Profiling.hpp"
+//#include "Profiling.hpp"
 
 #include <complex>
 #include <cstdint>

@@ -3,6 +3,7 @@
 
 #include "Definitions.hpp"
 #include "PhaseUtilities.hpp"
+#include "Complex.hpp"
 
 #include <array>
 #include <bitset>
@@ -765,10 +766,10 @@ namespace dd {
             if (b == nullptr) return a->isIdentityOperator();
             // Note the length of the vectors is 2*NUM_QUBITS+2
             for (unsigned int i = 0; i < NUM_BITSETBITS; i++) {
-                if (!a->paulis.test(i) and b->paulis.test(i)) {
+                if (!a->paulis.test(i) && b->paulis.test(i)) {
                     return true;
                 }
-                if (a->paulis.test(i) and !b->paulis.test(i)) {
+                if (a->paulis.test(i) && !b->paulis.test(i)) {
                     return false;
                 }
             }
@@ -810,10 +811,10 @@ namespace dd {
         static bool leneq(const LimEntry<NUM_QUBITS>* a, const LimEntry<NUM_QUBITS>* b) {
             assert(a != noLIM && b != noLIM);
             for (unsigned int i = 0; i < NUM_BITSETBITS; i++) {
-                if (!a->paulis.test(i) and b->paulis.test(i)) {
+                if (!a->paulis.test(i) && b->paulis.test(i)) {
                     return true;
                 }
-                if (a->paulis.test(i) and !b->paulis.test(i)) {
+                if (a->paulis.test(i) && !b->paulis.test(i)) {
                     return false;
                 }
             }
